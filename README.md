@@ -31,5 +31,6 @@ the rest (`get_schedule(), get_docentenlijst(), get_subjects(),`
 - [ ] add comments & make code more readable
 - [ ] rewrite most code to use new faster & more reliable processing (see `get_homework()` and `get_schedule()` in source code)
 - [ ] add api for remote interference and cross-language support
-\n\n
+
+
 **NOT** affiliated with somtoday in any way (no shit). use responsibly.
