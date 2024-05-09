@@ -43,7 +43,7 @@ class Auth:
                 return jsessionid['value'], token['value']
             sleep(1)
 
-class Main(Auth):
+class Pysom(Auth):
     def __init__(self) -> None:
         self.token = ""
         self.jsessionid = ""
@@ -465,11 +465,9 @@ class Main(Auth):
                 data_id += 1
         return data
 
+pysom = Pysom()
 
-
-auth = Auth()
-main = Main()
 if __name__ == '__main__':
     # Example usage
-    print(main.get_absences())
-    print(main.get_homework())
+    print(pysom.get_absences())
+    print(pysom.get_homework())
