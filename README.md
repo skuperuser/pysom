@@ -22,13 +22,13 @@ from pysom import pysom
 
 `get_grades_for_all_subjects()` - returns a **dict** containing the average grade for _all_ subjects of the student.
 
-the rest (`get_schedule(), get_docentenlijst(), get_subjects(),
-get_school_name(), get_grade_for_subject()` + many more) is self-explanitory.
+the rest (`get_schedule(), get_docentenlijst(), get_subjects(),`
+`get_school_name(), get_grade_for_subject()` + many more) is self-explanitory.
 
-### TODO
-- [X] add homework and absences
+### Todo
+- [X] add homework and schedule
 - [ ] optimise `get_grades_for_all_subjects()`
 - [ ] add comments & make code more readable
-- [ ] rewrite ~70% of code to use new faster & more reliable processing (see `get_homework()` and `get_absences()` in source code)
+- [ ] rewrite most code to use new faster & more reliable processing (see `get_homework()` and `get_schedule()` in source code)
 
 **NOT** affiliated with somtoday in any way (no shit). use responsibly.
