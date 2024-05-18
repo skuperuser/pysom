@@ -1,7 +1,7 @@
 # pysom
 A python library for somtoday to get grades, homework, schedules, news, absences, etc. 
 Scrapes the somtoday site for data to avoid the constantly changing authentication mess regarding the somtoday api.
-Uses the `requests` module for scraping. Only requires a browser for login.
+Uses the `requests` module for scraping. Only requires a browser for saving auth cookies
 
 ## Usage:
 
