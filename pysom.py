@@ -9,6 +9,8 @@ import datetime
 
 class Auth:
     def __init__(self, is_invalid=False) -> None:
+        self.token = ""
+        self.jsessionid = ""
         self.is_invalid = is_invalid
 
         try:
@@ -45,8 +47,6 @@ class Auth:
 
 class Pysom(Auth):
     def __init__(self) -> None:
-        self.token = ""
-        self.jsessionid = ""
         self.refresh_creds()
     
     def refresh_creds(self):
@@ -79,7 +79,7 @@ class Pysom(Auth):
         try:
             
             response = requests.get(f'https://elo.somtoday.nl{page}', headers=headers, cookies=cookies, allow_redirects=True)
-        except requests.TooManyRedirects:
+        except:
             self.sso_login(force=True)
             self.refresh_creds()
             self.make_request(page) # redo request  
